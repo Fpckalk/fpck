@@ -1,13 +1,5 @@
 <?php include_once("includes/header.php") ?>
 
-<div id="filters">
-	<span class="filter active all">all</span>
-	<span class="filter school">school</span>
-	<span class="filter work">work</span>
-	<span class="filter personal">personal</span>
-	<div class="clear"></div>
-</div>
-
 <div id="cases">
 	<div class="case school">
 		<a class="case_img_a" href="http://www.wijkslag.burningafro.org" target="_blank"><img class="case_img" src="images/thumbs/wijkslag.jpg" width="240" height="130" alt="Wijkslag" /></a>

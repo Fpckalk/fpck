@@ -22,25 +22,4 @@ $(document).ready(function() {
 	$('#filters').width(filterWidth);*/
 	
 	$('.case:nth-child(3n)').addClass('last');
-	$('.filter').click(function() {
-		var currentFilter = $(this).text();
-		$('.filter').removeClass('active');
-		$(this).addClass('active');
-		
-		$('.case:not(.' + currentFilter + ')').fadeOut(tranSpeed, function() {
-			$('.case').removeClass('last');
-			if(currentFilter == 'all') {
-				$('.case').fadeIn(tranSpeed);
-				$('.case:nth-child(3n)').addClass('last');
-			} else {
-				$('.case.' + currentFilter).fadeIn(tranSpeed);
-				$('.case.' + currentFilter).each(function(){
-				var i = $(this).index('.case.' + currentFilter)+1;
-				if (i%3==0) {
-						$(this).addClass('last');
-				};
-			});
-			};
-		});
-	});
 });
