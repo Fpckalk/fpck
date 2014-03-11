@@ -1,7 +1,4 @@
 $(document).ready(function() {
-	$('#intro_close_btn').click(function() {
-		$('#intro').slideUp('slow');
-	});
 	
 	//** Validation and mail **//
 	$('#contact_form').validate({

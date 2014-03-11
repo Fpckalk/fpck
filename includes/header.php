@@ -36,18 +36,6 @@ include_once("settings.php");
 					</ul>
 				</nav>
 				<div class="clear"></div>
-				<?php if ($page == "") { ?>
-					<div id="intro">
-						<div id="intro_close_btn">X</div>
-						<img id="photo_home" src="images/photo.jpg" width="133" height="100" alt="Photo of myself" />
-						<p id="intro_p">
-							Hello!<br />
-							My name is Frank Kalk and I'm a front-end developer originating from The Netherlands. I make websites and like to brag about them to people who do not seem interested in the subject.
-							Pleased to meet you, have you seen my work? It's pretty amazing.
-						</p>
-						<div class="clear"></div>
-					</div>
-				<?php } ?>
 				
 			</header>
 			<div class="line"></div>
