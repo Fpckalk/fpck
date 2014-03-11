@@ -1,6 +1,4 @@
-<?php
-include_once("settings.php");
-?>
+<?php include_once("settings.php"); ?>
 <!DOCTYPE html>
 <html lang="nl">
 <!--<?= $copyright ?>-->
@@ -30,13 +28,13 @@ include_once("settings.php");
 				?>
 				<nav>
 					<ul>
-						<li class="menu_li"><a class="menu_item <?php if ($page == "") { echo('active');}?>" href="/">Home</a></li>
-						<li class="menu_li"><a class="menu_item <?php if ($page == "about") { echo('active');}?>" href="about">About</a></li>
-						<li class="menu_li"><a class="menu_item <?php if ($page == "contact") { echo('active');}?>" href="contact">Contact</a></li>
+						<li><a class="<?php if ($page == "") { echo('active');}?>" href="/">Home</a></li>
+						<li><a class="<?php if ($page == "about") { echo('active');}?>" href="about">About</a></li>
+						<li><a class="<?php if ($page == "contact") { echo('active');}?>" href="contact">Contact</a></li>
 					</ul>
 				</nav>
 				<div class="clear"></div>
 				
 			</header>
-			<div class="line"></div>
+			<hr>
 			<div id="content">

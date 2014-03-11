@@ -1,6 +1,6 @@
 			<div class="clear"></div>
 		</div>
-		<div class="line"></div>
+		<hr>
 		<footer>
 			<div id="social">
 				<span class="title">Social</span>
