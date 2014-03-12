@@ -4,8 +4,7 @@
 <!--<?= $copyright ?>-->
   
   <head>
-      
-    <title><?= $title ?></title>   
+    <title><?= $title ?></title>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="author" content="<?php= $author ?>" />
     <meta name="description" content="<?php= $desc ?>" /> 
@@ -28,13 +27,12 @@
 				?>
 				<nav>
 					<ul>
-						<li><a class="<?php if ($page == "") { echo('active');}?>" href="/">Home</a></li>
+						<li><a class="<?php if ($page == "") { echo('active');}?>" href="../fpck/">Home</a></li>
 						<li><a class="<?php if ($page == "about") { echo('active');}?>" href="about">About</a></li>
 						<li><a class="<?php if ($page == "contact") { echo('active');}?>" href="contact">Contact</a></li>
 					</ul>
 				</nav>
-				<div class="clear"></div>
 				
 			</header>
 			<hr>
-			<div id="content">
+			<section id="main">

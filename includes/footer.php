@@ -1,24 +1,7 @@
 			<div class="clear"></div>
-		</div>
+		</section>
 		<hr>
 		<footer>
-			<div id="social">
-				<span class="title">Social</span>
-				<ul>
-					<li class="social_icon_li">
-						<img class="social_icon_img" src="images/icons/linkedin.png" alt="" /><a target="_blank" href="http://www.linkedin.com/pub/frank-kalk/18/668/a98/" class="social_icon_a">Find me on LinkedIn</a>
-					</li><br />
-					<li class="social_icon_li">
-						<img class="social_icon_img" src="images/icons/vimeo.png" alt="" /><a target="_blank" href="http://vimeo.com/user4699257/" class="social_icon_a">Watch my videos on Vimeo</a>
-					</li><br />
-					<li class="social_icon_li">
-						<img class="social_icon_img" src="images/icons/delicious.png" alt="" /><a target="_blank" href="http://www.delicious.com/Burningafro/" class="social_icon_a">See my bookmarks on Delicious</a>
-					</li><br />
-					<li class="social_icon_li">
-						<img class="social_icon_img" src="images/icons/twitter.png" alt="" /><a target="_blank" href="http://www.twitter.com/Tildephile/" class="social_icon_a">Follow me on Twitter</a>
-					</li>
-				</ul>
-			</div>
 			<div id="contactform">
 				<span class="title">Contact</span>
 				<form method="post" id="contact_form">
@@ -29,7 +12,6 @@
 				</form>
 				<p id="contact_succes"></p>
 			</div>
-			<div class="clear"></div>
 		</footer>
 	</div>
 	
