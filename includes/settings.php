@@ -22,4 +22,4 @@ $title = 'Portfolio';
 $desc = 'Portfolio website Frank Kalk (under construction)';
 $author = 'Frank Kalk';
 $client = 'Frank Kalk';
-$copyright = '(c) ' . date('Y') . ' Frank @ burningafro.org';
+$copyright = '(c) ' . date('Y') . ' Frank @ fpck.nl';
