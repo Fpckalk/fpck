@@ -2,31 +2,20 @@ body {
   background: url("../images/bg.gif") fixed 0 0 #f4f5de;
   padding: 20px; }
 
-.title {
-  font-size: 24px;
-  color: #222222;
-  font-family: 'Oswald', sans-serif;
-  text-shadow: 1px 1px #FFFFFF;
-  text-transform: uppercase;
-  margin-bottom: 10px;
-  display: block; }
-
 #wrapper {
   max-width: 960px;
   margin: 0 auto; }
 
-#logo {
-  display: block; }
-
 nav {
-  margin-top: 20px;
   text-align: center; }
   nav ul {
     display: inline-block; }
     nav ul li {
       float: left;
-      margin: 0 15px;
+      margin-right: 30px;
       display: block; }
+      nav ul li:last-child {
+        margin-right: 0; }
       nav ul li a {
         font-size: 24px;
         color: #222222;
@@ -55,36 +44,17 @@ hr {
 
 .case {
   margin-bottom: 30px; }
-
-.case_img_a {
-  border: 5px solid #E2E3CE;
-  margin-bottom: 5px;
-  display: block; }
-
-.case_img_a:hover {
-  border: 5px solid #AFB09E;
-  text-decoration: none; }
-
-.case_img {
-  width: 100%;
-  height: auto; }
-
-.case_title {
-  font-weight: bold;
-  font-size: 14px;
-  color: #111111;
-  text-shadow: 1px 1px #FFFFFF;
-  padding: 3px 0; }
-
-.case_title:hover {
-  background-color: #E2E3CE;
-  text-decoration: none; }
-
-.case.last {
-  margin-right: 0; }
-
-footer {
-  margin-bottom: 30px; }
+  .case a {
+    display: block; }
+    .case a:hover {
+      text-decoration: none; }
+      .case a:hover img {
+        border: 5px solid #AFB09E; }
+    .case a img {
+      border: 5px solid #E2E3CE;
+      margin-bottom: 5px;
+      width: 100%;
+      height: auto; }
 
 /** SOCIAL **/
 #social {
@@ -110,12 +80,10 @@ footer {
   display: inline; }
 
 /** FORM **/
-#contactform {
-  float: left; }
-
 .contact_input {
   width: 200px;
-  margin: 5px 0; }
+  margin: 5px 0;
+  padding: 5px; }
 
 .contact_input.false {
   display: none; }
@@ -138,11 +106,23 @@ footer {
 label.error {
   margin-left: 10px; }
 
-/** ABOUT **/
-#about_text {
-  width: 400px; }
+@media only screen and (min-width: 481px) {
+  .case {
+    float: left;
+    width: 46%;
+    margin-right: 8%; }
+    .case:nth-child(2n) {
+      margin-right: 0; } }
+@media only screen and (min-width: 768px) {
+  nav {
+    float: right; }
 
-/** CONTACT **/
-#contact_left {
-  float: left;
-  width: 220px; }
+  .case {
+    width: 31.33%;
+    margin-right: 3%; }
+    .case:nth-child(2n) {
+      margin-right: 3%; }
+    .case:nth-child(3n) {
+      margin-right: 0; }
+    .case:nth-child(3n+1) {
+      clear: left; } }

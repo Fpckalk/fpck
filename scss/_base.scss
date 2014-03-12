@@ -3,26 +3,12 @@ body {
 	padding: 20px;
 }
 
-.title {
-	font-size: 24px;
-	color: #222222;
-	font-family: 'Oswald', sans-serif;
-	text-shadow: 1px 1px #FFFFFF;
-	text-transform: uppercase;
-	margin-bottom: 10px;
-	display: block;
-}
-
-
 #wrapper {
 	max-width: 960px;
 	margin: 0 auto;
 }
 
-#logo { display: block; }
-
 nav {
-	margin-top: 20px;
 	text-align: center;
 
 	ul {
@@ -30,8 +16,10 @@ nav {
 
 		li {
 			float: left;
-			margin: 0 15px;
+			margin-right: 30px;
 			display: block;
+
+			&:last-child { margin-right: 0; }
 
 			a {
 				font-size: 24px;
@@ -69,38 +57,26 @@ hr {
 
 .case {
 	margin-bottom: 30px;
-}
-	.case_img_a {
-		border: 5px solid #E2E3CE;
-		margin-bottom: 5px;
+	
+	a {
 		display: block;
-	}
-		.case_img_a:hover {
-			border: 5px solid #AFB09E;
+
+		&:hover {
 			text-decoration: none;
+
+			img {
+				border: 5px solid #AFB09E;
+			}
 		}
 
-	.case_img {
-		width: 100%;
-		height: auto;
-	}
-	.case_title {
-		font-weight: bold;
-		font-size: 14px;
-		color: #111111;
-		text-shadow: 1px 1px #FFFFFF;
-		padding: 3px 0;
-	}
-		.case_title:hover {
-			background-color: #E2E3CE;
-			text-decoration: none;
+		img {
+			border: 5px solid #E2E3CE;
+			margin-bottom: 5px;
+			width: 100%;
+			height: auto;
 		}
-	.case.last {
-		margin-right: 0;
 	}
-	
-footer {
-	margin-bottom: 30px;
+
 }
 	
 /** SOCIAL **/
@@ -128,46 +104,29 @@ footer {
 		}
 	
 /** FORM **/
-#contactform {
-	float: left;
-}
-	form {
-		
+.contact_input {
+		width: 200px;
+		margin: 5px 0;
+		padding: 5px;
 	}
-	.contact_input {
-			width: 200px;
-			margin: 5px 0;
-		}
-			.contact_input.false {
-				display: none;
-			}
-			.contact_input.message {
-				height: 70px;
-				width: 230px;
-			}
-	#submit {
-		display: block;
-		border: 0;
-		color: #FFFFFF;
-		background-color: #222222;
-		padding: 5px 15px;
-		cursor: pointer;
-	}
-		#contact_succes {
+		.contact_input.false {
 			display: none;
 		}
-	label.error {
-		margin-left: 10px;
-	}
-		
-		
-/** ABOUT **/
-#about_text {
-	width: 400px;
+		.contact_input.message {
+			height: 70px;
+			width: 230px;
+		}
+#submit {
+	display: block;
+	border: 0;
+	color: #FFFFFF;
+	background-color: #222222;
+	padding: 5px 15px;
+	cursor: pointer;
 }
-		
-/** CONTACT **/
-#contact_left {
-	float: left;
-	width: 220px;
+	#contact_succes {
+		display: none;
+	}
+label.error {
+	margin-left: 10px;
 }

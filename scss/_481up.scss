@@ -1,0 +1,7 @@
+.case {
+	float: left;
+	width: 46%;
+	margin-right: 8%;
+
+	&:nth-child(2n) { margin-right: 0; }
+}
