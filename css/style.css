@@ -7,7 +7,6 @@ body {
   margin: 0 auto; }
 
 nav {
-  margin-top: 20px;
   text-align: center; }
   nav ul {
     display: inline-block; }
@@ -120,3 +119,21 @@ hr {
 
 label.error {
   margin-left: 10px; }
+
+@media only screen and (min-width: 481px) {
+  .case {
+    float: left;
+    width: 46%;
+    margin-right: 8%; }
+    .case:nth-child(2n) {
+      margin-right: 0; } }
+@media only screen and (min-width: 768px) {
+  .case {
+    width: 31.33%;
+    margin-right: 3%; }
+    .case:nth-child(2n) {
+      margin-right: 3%; }
+    .case:nth-child(3n) {
+      margin-right: 0; }
+    .case:nth-child(3n+1) {
+      clear: left; } }
