@@ -20,9 +20,9 @@
 	<div id="wrapper">
 		<header>
 			<?php 
-			$urlCheck = $_SERVER['REQUEST_URI'];
-			$urlExplode = explode("/", $urlCheck);
-			$page = $urlExplode[4];
+				$urlCheck = $_SERVER['REQUEST_URI'];
+				$urlExplode = explode("/", $urlCheck);
+				$page = $urlExplode[4];
 			?>
 			<nav>
 				<ul>
@@ -34,4 +34,4 @@
 
 		</header>
 		<hr>
-		<section id="main">
+		<div id="main">

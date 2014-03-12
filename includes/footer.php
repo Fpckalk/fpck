@@ -1,4 +1,4 @@
-		</section>
+		</div>
 		<hr>
 		<footer>
 			<div id="contactform">
