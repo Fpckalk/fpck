@@ -1,4 +1,3 @@
-			<div class="clear"></div>
 		</section>
 		<hr>
 		<footer>
@@ -8,7 +7,7 @@
 					<input id="name" class="contact_input required" type="text" name="name" placeholder="Your name here please" /><br />
 					<input id="email" class="contact_input required email" type="email" name="email" placeholder="E-mail here, thank you" /><br />
 					<textarea id="message" class="contact_input message required" name="message" placeholder="And a message here. Great."></textarea><br />
-					<input type="submit" name="submit_button" id="submit" class="meer_weten_btn" value="Send it" />
+					<button id="submit">Send it</button>
 				</form>
 				<p id="contact_succes"></p>
 			</div>

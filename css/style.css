@@ -2,21 +2,9 @@ body {
   background: url("../images/bg.gif") fixed 0 0 #f4f5de;
   padding: 20px; }
 
-.title {
-  font-size: 24px;
-  color: #222222;
-  font-family: 'Oswald', sans-serif;
-  text-shadow: 1px 1px #FFFFFF;
-  text-transform: uppercase;
-  margin-bottom: 10px;
-  display: block; }
-
 #wrapper {
   max-width: 960px;
   margin: 0 auto; }
-
-#logo {
-  display: block; }
 
 nav {
   margin-top: 20px;
@@ -83,9 +71,6 @@ hr {
 .case.last {
   margin-right: 0; }
 
-footer {
-  margin-bottom: 30px; }
-
 /** SOCIAL **/
 #social {
   float: left;
@@ -110,12 +95,10 @@ footer {
   display: inline; }
 
 /** FORM **/
-#contactform {
-  float: left; }
-
 .contact_input {
   width: 200px;
-  margin: 5px 0; }
+  margin: 5px 0;
+  padding: 5px; }
 
 .contact_input.false {
   display: none; }
@@ -137,12 +120,3 @@ footer {
 
 label.error {
   margin-left: 10px; }
-
-/** ABOUT **/
-#about_text {
-  width: 400px; }
-
-/** CONTACT **/
-#contact_left {
-  float: left;
-  width: 220px; }

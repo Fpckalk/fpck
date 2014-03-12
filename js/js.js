@@ -11,15 +11,4 @@ $(document).ready(function() {
 		}
 	});
 	
-	//** FILTERS **//
-	// Var declaration
-	var tranSpeed = 0;
-	var filterWidth = 0;
-
-	/*$('.filter').each(function() {
-		filterWidth += $(this).outerWidth(true);
-	});
-	$('#filters').width(filterWidth);*/
-	
-	$('.case:nth-child(3n)').addClass('last');
 });
