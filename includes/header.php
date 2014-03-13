@@ -9,7 +9,8 @@
 	<title><?= $title ?></title>
 	<meta name="author" content="<?= $author ?>" />
 	<meta name="description" content="<?= $desc ?>" />
-
+	
+	<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
 	<link type="text/css" rel="stylesheet" media="screen" href="css/css.css">
 	<link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Oswald">
 	<link type="image/ico" rel="icon" href="favicon.ico" />
