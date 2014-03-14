@@ -1,11 +1,20 @@
 body {
-	background: url('../images/bg.gif') fixed 0 0 #F4F5DE;
+	background: url('../images/bg.gif') 0 0 #F4F5DE;
 	padding: 20px;
 }
 
 #wrapper {
 	max-width: 960px;
 	margin: 0 auto;
+}
+
+article {
+
+	img {
+		width: 100%;
+
+		&+p { margin-top: 1em; }
+	}
 }
 
 nav {
@@ -64,9 +73,7 @@ hr {
 		&:hover {
 			text-decoration: none;
 
-			img {
-				border: 5px solid #AFB09E;
-			}
+			img { border: 5px solid #AFB09E; }
 		}
 
 		img {
@@ -78,30 +85,8 @@ hr {
 	}
 
 }
-	
-/** SOCIAL **/
-#social {
-	float: left;
-	margin-right: 75px;
-}
-	.social_icon_li {
-		margin-bottom: 5px;
-		display: inline;
-	}
-		.social_icon_img {
-			display: inline;
-			vertical-align: text-bottom;
-		}
-		.social_icon_a {
-			display: inline;
-			margin-left: 5px;
-			vertical-align: baseline;
-			line-height: 25px;
-		}
-		.social_icon_hover .social_icon_a {
-			text-decoration: underline;
-			display: inline;
-		}
+
+.single aside img { margin-bottom: 1em; }
 	
 /** FORM **/
 .contact_input {

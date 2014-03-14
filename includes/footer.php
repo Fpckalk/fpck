@@ -1,7 +1,7 @@
 		</div>
 		<hr>
 		<footer>
-			<div id="contactform">
+<!-- 			<div id="contactform">
 				<span class="title">Contact</span>
 				<form method="post" id="contact_form">
 					<input id="name" class="contact_input required" type="text" name="name" placeholder="Your name here please" /><br />
@@ -10,7 +10,7 @@
 					<button id="submit">Send it</button>
 				</form>
 				<p id="contact_succes"></p>
-			</div>
+			</div> -->
 		</footer>
 	</div>
 	

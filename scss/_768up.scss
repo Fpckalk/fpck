@@ -1,5 +1,12 @@
 nav { float: right; }
 
+#welcome {
+	max-width: 65%;
+	margin: 0 auto;
+	font-size: 1.1em;
+	text-align: center;
+}
+
 .case {
 	width: 31.33%;
 	margin-right: 3%;
@@ -7,4 +14,27 @@ nav { float: right; }
 	&:nth-child(2n) { margin-right: 3%; }
 	&:nth-child(3n) { margin-right: 0; }
 	&:nth-child(3n+1) { clear: left; }
+}
+
+.single {
+	display: inline-block;
+	
+	p {
+		float: left;
+		clear: left;
+		max-width: 50%;
+	}
+
+	> img {
+		float: right;
+		max-width: 45%;
+		margin-left: 5%;
+
+		&+p { margin-top: 0; }
+	}
+
+	aside {
+		float: right;
+		max-width: 45%;
+	}
 }
