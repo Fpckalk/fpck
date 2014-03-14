@@ -14,11 +14,7 @@
 	<meta name="author" content="<?= $author ?>" />
 	<meta name="description" content="<?= $desc ?>" />
 	
-<<<<<<< HEAD
-	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-=======
 	<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
->>>>>>> e909e4ad7147ff76bb185798ca42e52ea89e428e
 	<link type="text/css" rel="stylesheet" media="screen" href="css/css.css">
 	<link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Oswald">
 	<link type="image/ico" rel="icon" href="favicon.ico" />
