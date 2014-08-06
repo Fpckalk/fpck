@@ -18,7 +18,15 @@ nav { float: right; }
 
 .single {
 	display: inline-block;
-	
+
+	.left-content {
+		float: left;
+		clear: left;
+		max-width: 50%;
+
+		p { max-width: none; }
+	}
+
 	p {
 		float: left;
 		clear: left;

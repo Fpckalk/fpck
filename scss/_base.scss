@@ -3,6 +3,8 @@ body {
 	padding: 20px;
 }
 
+ul { display: inline-block; }
+
 #wrapper {
 	max-width: 960px;
 	margin: 0 auto;
@@ -20,30 +22,26 @@ article {
 nav {
 	text-align: center;
 
-	ul {
-		display: inline-block;
+	li {
+		float: left;
+		margin-right: 30px;
+		display: block;
 
-		li {
-			float: left;
-			margin-right: 30px;
-			display: block;
+		&:last-child { margin-right: 0; }
 
-			&:last-child { margin-right: 0; }
+		a {
+			font-size: 24px;
+			color: #222222;
+			font-family: 'Oswald', sans-serif;
+			text-shadow: 1px 1px #FFFFFF;
+			text-transform: uppercase;
 
-			a {
-				font-size: 24px;
-				color: #222222;
-				font-family: 'Oswald', sans-serif;
-				text-shadow: 1px 1px #FFFFFF;
-				text-transform: uppercase;
-
-				&.active {
-					color: #E44A4A;
-				}
-				&:hover {
-					color: #E44A4A;
-					text-decoration: none;
-				}
+			&.active {
+				color: #E44A4A;
+			}
+			&:hover {
+				color: #E44A4A;
+				text-decoration: none;
 			}
 		}
 	}

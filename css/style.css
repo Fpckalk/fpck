@@ -2,6 +2,9 @@ body {
   background: url("../images/bg.gif") 0 0 #f4f5de;
   padding: 20px; }
 
+ul {
+  display: inline-block; }
+
 #wrapper {
   max-width: 960px;
   margin: 0 auto; }
@@ -13,25 +16,23 @@ article img {
 
 nav {
   text-align: center; }
-  nav ul {
-    display: inline-block; }
-    nav ul li {
-      float: left;
-      margin-right: 30px;
-      display: block; }
-      nav ul li:last-child {
-        margin-right: 0; }
-      nav ul li a {
-        font-size: 24px;
-        color: #222222;
-        font-family: 'Oswald', sans-serif;
-        text-shadow: 1px 1px #FFFFFF;
-        text-transform: uppercase; }
-        nav ul li a.active {
-          color: #E44A4A; }
-        nav ul li a:hover {
-          color: #E44A4A;
-          text-decoration: none; }
+  nav li {
+    float: left;
+    margin-right: 30px;
+    display: block; }
+    nav li:last-child {
+      margin-right: 0; }
+    nav li a {
+      font-size: 24px;
+      color: #222222;
+      font-family: 'Oswald', sans-serif;
+      text-shadow: 1px 1px #FFFFFF;
+      text-transform: uppercase; }
+      nav li a.active {
+        color: #E44A4A; }
+      nav li a:hover {
+        color: #E44A4A;
+        text-decoration: none; }
 
 hr {
   clear: both;
@@ -120,6 +121,12 @@ label.error {
 
   .single {
     display: inline-block; }
+    .single .left-content {
+      float: left;
+      clear: left;
+      max-width: 50%; }
+      .single .left-content p {
+        max-width: none; }
     .single p {
       float: left;
       clear: left;
