@@ -1,9 +1,23 @@
-nav { float: right; }
+nav#main { float: right; }
+nav#cases {
+	text-align: center;
+
+	a {
+		display: inline-block;
+		background-color: transparent;
+		color: #0066FF;
+		padding: 0;
+		margin: 0 5px;
+
+		&:hover {
+			background-color: transparent;
+			text-decoration: underline;
+		}
+	}
+}
 
 #welcome {
 	max-width: 65%;
-	margin: 0 auto;
-	font-size: 1.1em;
 	text-align: center;
 }
 
@@ -19,6 +33,8 @@ nav { float: right; }
 .single {
 	display: inline-block;
 
+	& > a { float: left; }
+
 	.left-content {
 		float: left;
 		clear: left;
@@ -33,10 +49,11 @@ nav { float: right; }
 		max-width: 50%;
 	}
 
-	> img {
+	> figure {
 		float: right;
 		max-width: 45%;
-		margin-left: 5%;
+		clear: right;
+		margin: 0 0 5% 5%;
 
 		&+p { margin-top: 0; }
 	}
@@ -44,5 +61,7 @@ nav { float: right; }
 	aside {
 		float: right;
 		max-width: 45%;
+
+		img { margin: 0 0 1em 0; }
 	}
 }

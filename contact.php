@@ -6,9 +6,9 @@
 		<p>Come look me up and we'll have something to drink and be best friends and talk about stuff.</p>
 		<p>You're also welcome to contact me via one of these cool things:</p>
 		<ul>
-			<li>E-mail: info(at)fpck.nl</li>
-			<li>Google+: <a href="https://plus.google.com/+FrankKalk/">Frank Kalk</a></li>
-			<li></li>
+			<li><i class="icons-mail"></i>info(at)fpck.nl</li>
+			<li><i class="icons-linkedin"></i><a href="http://linkedin.com/pub/frank-kalk/18/668/">Find me on LinkedIn</a></li>
+			<li><i class="icons-google"></i><a href="https://plus.google.com/+FrankKalk/">Or on the Googles</a></li>
 		</ul>
 	</div>
 

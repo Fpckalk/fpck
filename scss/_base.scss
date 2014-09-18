@@ -8,6 +8,8 @@ ul { display: inline-block; }
 #wrapper {
 	max-width: 960px;
 	margin: 0 auto;
+
+	header { height: 30px; }
 }
 
 article {
@@ -17,32 +19,49 @@ article {
 
 		&+p { margin-top: 1em; }
 	}
+
+	section { float: left; }
 }
 
-nav {
-	text-align: center;
+nav#main {
+	clear: left;
+	float: left;
+	margin: 10px 0;
 
 	li {
 		float: left;
-		margin-right: 30px;
+		margin: 5px 15px 0 0;
 		display: block;
 
 		&:last-child { margin-right: 0; }
 
 		a {
-			font-size: 24px;
+			font-size: 18px;
 			color: #222222;
 			font-family: 'Oswald', sans-serif;
-			text-shadow: 1px 1px #FFFFFF;
 			text-transform: uppercase;
 
-			&.active {
-				color: #E44A4A;
-			}
-			&:hover {
+			&.active, &:hover {
 				color: #E44A4A;
 				text-decoration: none;
 			}
+		}
+	}
+}
+nav#cases {
+	text-align: center;
+
+	a {
+		display: inline-block;
+		padding: 5px;
+		margin: 5px 0;
+		background-color: #222;
+		color: #ffffff;
+		border-radius: 3px;
+
+		&:hover {
+			background-color: #E44A4A;
+			text-decoration: none;
 		}
 	}
 }
@@ -62,9 +81,17 @@ hr {
 	width: 100%;
 }
 
+#welcome { margin: 2em auto; }
+
 .case {
 	margin-bottom: 30px;
 	
+	p a {
+		display: inline-block;
+
+		&:hover { text-decoration: underline; }
+	}
+
 	a {
 		display: block;
 
@@ -76,7 +103,7 @@ hr {
 
 		img {
 			border: 5px solid #E2E3CE;
-			margin-bottom: 5px;
+			margin-bottom: 1em;
 			width: 100%;
 			height: auto;
 		}
@@ -84,21 +111,40 @@ hr {
 
 }
 
-.single aside img { margin-bottom: 1em; }
+.single {
+
+	& > a {
+		display: inline-block;
+		margin-bottom: 1em;
+	}
+
+	figure {
+		box-shadow: 0 0 4px #aaa;
+		margin: 1em 0;
+		
+		figcaption {
+			background-color: #ffffff;
+			padding: 15px;
+			font-size: .875em;
+		}
+	}
+
+	aside img { margin: 2em 0 1em; }
+}
 	
 /** FORM **/
 .contact_input {
-		width: 200px;
-		margin: 5px 0;
-		padding: 5px;
-	}
-		.contact_input.false {
-			display: none;
-		}
-		.contact_input.message {
-			height: 70px;
-			width: 230px;
-		}
+	width: 200px;
+	margin: 5px 0;
+	padding: 5px;
+}
+.contact_input.false {
+	display: none;
+}
+.contact_input.message {
+	height: 70px;
+	width: 230px;
+}
 #submit {
 	display: block;
 	border: 0;
@@ -107,9 +153,18 @@ hr {
 	padding: 5px 15px;
 	cursor: pointer;
 }
-	#contact_succes {
-		display: none;
-	}
-label.error {
-	margin-left: 10px;
+
+/** ICONS **/
+// Here because the styles are specific to the icons loaded
+// And not to load and insert them like in icons.css
+[class^="icons-"]:before, [class*=" icons-"]:before,
+[class^="icons-"]:after, [class*=" icons-"]:after {
+	margin-right: 5px;
+	color: #222222;
 }
+.icons-mail:before { font-size: 14px; }
+.icons-google:before { color: #dd4b39; }
+.icons-linkedin:before { color: #107fb7; }
+
+#contact_succes { display: none; }
+label.error { margin-left: 10px; }

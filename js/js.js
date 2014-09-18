@@ -10,5 +10,15 @@ $(document).ready(function() {
 			});
 		}
 	});
+
+
+	var coffee = document.getElementById("coffee");
+	if (coffee) {
+		coffee.addEventListener("keypress", function(e) {
+			if(e.keyCode == 13) {
+				this.outerHTML = "<br><span>" + this.value + "? Aight, gotcha</span>";
+			}
+		})
+	};
 	
 });

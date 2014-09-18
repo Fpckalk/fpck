@@ -1,4 +1,4 @@
-<?phpphp  
+<?php
 	if( isset($_POST) ){  
 	  
 	    //form validation vars  

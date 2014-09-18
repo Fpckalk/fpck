@@ -7,35 +7,28 @@
 <section>
 	<article class="case">
 		<a href="cases/spotonagency">
-			<img src="http://lorempixel.com/240/130/nature" alt="">
+			<img src="images/cases/spotonagency/thumb.jpg" alt="Spot On Agency">
 			<h1>Spot On Agency</h1>
 		</a>
-		<p>Lipsumsmall</p>
+		<p>The project I worked on at my internship. Learned a lot about WordPress theme development, and the design was a dream to work with.</p>
 	</article>
 
 	<article class="case">
-		<a href="cases/spotonagency">
-			<img src="http://lorempixel.com/240/130/nature" alt="">
-			<h1>Something else</h1>
+		<a href="cases/gamergeeks">
+			<img src="images/cases/gamergeeks/thumb.jpg" alt="GamerGeeks">
+			<h1>GamerGeeks</h1>
 		</a>
-		<p>Lipsumsmall</p>
+		<p>A website I set up for the GamerGeeks, also the first time I fully set up a WordPress theme (with the great help of the <a target="_blank" href="http://themble.com/bones/">Bones framework</a>).</p>
 	</article>
 
 	<article class="case">
-		<a href="cases/spotonagency">
-			<img src="http://lorempixel.com/240/130/nature" alt="">
-			<h1>Something else</h1>
+		<a href="cases/yetiland">
+			<img src="images/cases/spotonagency/thumb.jpg" alt="Yetiland">
+			<h1>Yetiland</h1>
 		</a>
-		<p>Lipsumsmall</p>
+		<p>The portfolio of an artist. One of the most pleasurable sites I've worked on.</p>
 	</article>
 
-	<article class="case">
-		<a href="cases/spotonagency">
-			<img src="http://lorempixel.com/240/130/nature" alt="">
-			<h1>Something else</h1>
-		</a>
-		<p>Lipsumsmall</p>
-	</article>
 </section>
 
 <?php include_once("includes/footer.php") ?>

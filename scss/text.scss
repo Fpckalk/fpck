@@ -1,5 +1,16 @@
+/* 
+Fonts
+Was a Google font at first. Made it local to speed up loading times
+*/
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Oswald Regular'), local('Oswald-Regular'), url(fonts/oswald.woff) format('woff');
+}
+
 /*
-text styles
+Text styles
 */
 body, td, th, div, p,
 input, textarea, select, button {
@@ -9,10 +20,14 @@ input, textarea, select, button {
 	color: #222;
 }
 
-p { margin-bottom: 1em; }
+p { 
+	margin-bottom: 1em;
+	
+	a { display: inline-block; }
+}
 
 a {
-	color: #0D91FF;
+	color: #0066ff;
 	text-decoration: none;
 
 	&:hover { text-decoration: underline; }
@@ -20,7 +35,7 @@ a {
 	
 
 /*
-text thingies
+Text thingies
 */
 h1,
 h2,
@@ -31,22 +46,36 @@ h6 {
 	font-size: 100%;
 	color: #222222;
 	font-family: 'Oswald', sans-serif;
-	text-shadow: 1px 1px #FFFFFF;
-	text-transform: uppercase;
 	line-height: 1em;
 	margin: 1em 0 .4em;
 	display: block;
+	clear: both;
 }
 
-h1 { font-size: 2.0em; }
-h2 { font-size: 1.8em; }
-h3 { font-size: 1.6em; }
-h4 { font-size: 1.4em; }
+h1 { font-size: 1.6em; }
+h2 { font-size: 1.5em; }
+h3 { font-size: 1.4em; }
+h4 { font-size: 1.3em; }
 h5 { font-size: 1.2em; }
-h6 { font-size: 1.0em; }
+h6 { font-size: 1.1em; }
 
 .case h1 {
-	font-size: 1.4em;
+	font-size: 1.2em;
 	margin: .4em 0;
 	text-transform: none;
+}
+
+h1#title {
+	text-transform: none;
+	float: left;
+	margin: 7px 0 0 0;
+
+	a {
+		color: inherit;
+
+		&:hover {
+			color: #E44A4A;
+			text-decoration: none;
+		}
+	}
 }

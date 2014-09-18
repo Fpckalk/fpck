@@ -1,16 +1,27 @@
 		</div>
 		<hr>
 		<footer>
-<!-- 			<div id="contactform">
-				<span class="title">Contact</span>
-				<form method="post" id="contact_form">
-					<input id="name" class="contact_input required" type="text" name="name" placeholder="Your name here please" /><br />
-					<input id="email" class="contact_input required email" type="email" name="email" placeholder="E-mail here, thank you" /><br />
-					<textarea id="message" class="contact_input message required" name="message" placeholder="And a message here. Great."></textarea><br />
-					<button id="submit">Send it</button>
-				</form>
-				<p id="contact_succes"></p>
-			</div> -->
+			<?php 
+				$lines = array(
+					"Radical!",
+					"I only have 487 more messages for you, sit tight",
+					"My favorite band is The Knife",
+					"What do you think of violins?",
+					"Yes, you should definitely wear a hat",
+					"Ain't nothing but a G thang",
+					"All Daves reading this say 'woaho'!",
+					"I'd rather <a target='_blank' href='https://www.youtube.com/watch?v=xqKPe9w5bUs'>eat Randy</a>",
+					"I broke the dam",
+					"Just saying, <a target='_blank' href='https://www.youtube.com/watch?v=Xcs3OwrkcR4'>this</a> is the best video on YouTube",
+					"I take my coffee black, you? <input id='coffee' type='text' />"
+					);
+
+				// Get a random key from the given array
+				// And echo it in a paragraph
+				// Using mt_rand for best practice purposes and better randomness
+				$random_key = mt_rand(0, count($lines) - 1);
+				echo "<p>". $lines[$random_key] . "</p>";
+			?>
 		</footer>
 	</div>
 	

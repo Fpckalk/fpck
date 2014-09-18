@@ -1,8 +1,12 @@
+# This file is used for handling incoming server requests etcetera
+# It makes use of Regular Expressions. Very useful but very tough to use indeed.
+
+# Makes the filenames (index.php, yetiland.php) prettier by removing the .php part from view
 RewriteEngine on
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}\.php -f
 RewriteRule ^(.*)$ $1.php
 
+# Makes the website accessible with or without "www"
 RewriteCond %{HTTP_HOST} ^www\.fpck\.nl$
 RewriteRule ^(.*)$ "http\:\/\/fpck\.nl\/$1" [R=301,L]
-
