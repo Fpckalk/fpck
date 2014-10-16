@@ -4,6 +4,7 @@
 			<?php 
 				$lines = array(
 					"Radical!",
+					"Gnarly!",
 					"I only have 487 more messages for you, sit tight",
 					"My favorite band is The Knife",
 					"What do you think of violins?",
@@ -13,7 +14,11 @@
 					"I'd rather <a target='_blank' href='https://www.youtube.com/watch?v=xqKPe9w5bUs'>eat Randy</a>",
 					"I broke the dam",
 					"Just saying, <a target='_blank' href='https://www.youtube.com/watch?v=Xcs3OwrkcR4'>this</a> is the best video on YouTube",
-					"I take my coffee black, you? <input id='coffee' type='text' />"
+					"I take my coffee black, you? <input id='coffee' type='text' />",
+					"Don't you dare put on that hat!",
+					"I hope you have a lovely day.<br>Except if it's " . date('l'),
+					"My common sense is tingling",
+					"Keep your head still, trying to collect thoughts here"
 					);
 
 				// Get a random key from the given array

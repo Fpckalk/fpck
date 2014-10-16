@@ -5,8 +5,11 @@
 	<!-- Won't be necessary otherwise -->
 	<section>
 		<h1>Who I am</h1>
-		<p>So this is me. My name is Frank Kalk, currently living in The Netherlands. I like doing front-end development. My skills in front-end are: CSS2, CSS3, XHTML, HTML, PHP and finally JavaScript.</p>
-		<p>I also have <a href="http://blog.fpck.nl">a blog</a>, which I update at least once a year (promise). Concerning the 'fpck' part, both on the blog and this website: they simply are my initials. I like the look of 'em.</p>
+		<figure>
+			<img src="images/dancy.gif" alt="">
+		</figure>
+		<p>So this is me. My name is Frank Kalk, currently living in The Netherlands. I like doing front-end development. My skills in front-end are: CSS2, CSS3, XHTML, HTML, PHP and finally JavaScript. I have also dabbled in D3 (Data-Driven Documents), a JavaScript library for visualizing data.</p>
+		<p>I'm also a proud owner of <a href="http://blog.fpck.nl">a blog</a>, which I update at least once a year (promise). Concerning the 'fpck' part, both on the blog and this website: they simply are my initials. I like the look of 'em.</p>
 	</section>
 	<section>
 		<h1>About this website</h1>

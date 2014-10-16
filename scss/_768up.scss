@@ -1,8 +1,6 @@
 nav#main { float: right; }
-nav#cases {
-	text-align: center;
 
-	a {
+nav#cases a {
 		display: inline-block;
 		background-color: transparent;
 		color: #0066FF;
@@ -13,7 +11,6 @@ nav#cases {
 			background-color: transparent;
 			text-decoration: underline;
 		}
-	}
 }
 
 #welcome {
@@ -49,13 +46,13 @@ nav#cases {
 		max-width: 50%;
 	}
 
-	> figure {
+	figure {
 		float: right;
 		max-width: 45%;
 		clear: right;
 		margin: 0 0 5% 5%;
 
-		&+p { margin-top: 0; }
+		& + p { margin-top: 0; }
 	}
 
 	aside {

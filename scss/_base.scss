@@ -50,6 +50,8 @@ nav#main {
 }
 nav#cases {
 	text-align: center;
+	max-width: 400px;
+	margin: 0 auto;
 
 	a {
 		display: inline-block;
@@ -117,10 +119,15 @@ hr {
 		display: inline-block;
 		margin-bottom: 1em;
 	}
-
-	figure {
+	
+	// I love SASS for this
+	// Giving images a margin
+	// Except if they're in a figure
+	figure, img {
 		box-shadow: 0 0 4px #aaa;
 		margin: 1em 0;
+
+		img { margin: 0; }
 		
 		figcaption {
 			background-color: #ffffff;

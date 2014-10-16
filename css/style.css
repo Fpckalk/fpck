@@ -38,7 +38,9 @@ nav#main {
         text-decoration: none; }
 
 nav#cases {
-  text-align: center; }
+  text-align: center;
+  max-width: 400px;
+  margin: 0 auto; }
   nav#cases a {
     display: inline-block;
     padding: 5px;
@@ -88,10 +90,12 @@ hr {
 .single > a {
   display: inline-block;
   margin-bottom: 1em; }
-.single figure {
+.single figure, .single img {
   box-shadow: 0 0 4px #aaa;
   margin: 1em 0; }
-  .single figure figcaption {
+  .single figure img, .single img img {
+    margin: 0; }
+  .single figure figcaption, .single img figcaption {
     background-color: #ffffff;
     padding: 15px;
     font-size: .875em; }
@@ -159,17 +163,15 @@ label.error {
   nav#main {
     float: right; }
 
-  nav#cases {
-    text-align: center; }
-    nav#cases a {
-      display: inline-block;
+  nav#cases a {
+    display: inline-block;
+    background-color: transparent;
+    color: #0066FF;
+    padding: 0;
+    margin: 0 5px; }
+    nav#cases a:hover {
       background-color: transparent;
-      color: #0066FF;
-      padding: 0;
-      margin: 0 5px; }
-      nav#cases a:hover {
-        background-color: transparent;
-        text-decoration: underline; }
+      text-decoration: underline; }
 
   #welcome {
     max-width: 65%;
@@ -199,12 +201,12 @@ label.error {
       float: left;
       clear: left;
       max-width: 50%; }
-    .single > figure {
+    .single figure {
       float: right;
       max-width: 45%;
       clear: right;
       margin: 0 0 5% 5%; }
-      .single > figure + p {
+      .single figure + p {
         margin-top: 0; }
     .single aside {
       float: right;
