@@ -3,7 +3,7 @@
 // Some settings that should be set on every page
 
 // Error Reporting, disable if live
-error_reporting(E_ALL);
+error_reporting(0);
 
 // Disable magic quotes
 ini_set('magic_quotes_gpc', 0); 

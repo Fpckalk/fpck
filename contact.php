@@ -13,8 +13,8 @@
 	</div>
 
 	<aside>
-		<a target="blank" href="https://www.google.nl/maps/place/Nicolaas+Beetsweg+30/@52.6068594,4.709467,15z/data=!4m2!3m1!1s0x47c5f80bd07b5545:0xbfae4ad6811e8c31?hl=en">
-			<img src="images/gmap.png" alt="Nicolaas Beetsweg 30">
+		<a target="blank" href="https://www.google.nl/maps/place/Melis+Stokelaan+52,+1813+DL+Alkmaar/@52.6178732,4.7556107,15z/data=!4m2!3m1!1s0x47cf57d2a026b125:0xef0bb181091813ab?hl=en">
+			<img src="images/gmap.png" alt="Melis Stokelaan 52, Alkmaar">
 			On Google Maps
 		</a>
 	</aside>
