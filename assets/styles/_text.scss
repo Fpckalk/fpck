@@ -1,0 +1,70 @@
+/*
+Text styles
+*/
+body, td, th, div, p,
+input, textarea, select, button {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1em;
+	line-height: 1.4em;
+	color: #222;
+}
+
+p { 
+	margin-bottom: 1em;
+	
+	a { display: inline-block; }
+}
+
+a {
+	color: #0066ff;
+	text-decoration: none;
+
+	&:hover { text-decoration: underline; }
+}
+	
+
+/*
+Text thingies
+*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: 100%;
+	color: #222222;
+	font-family: 'Oswald', sans-serif;
+	line-height: 1em;
+	margin: 1em 0 .4em;
+	display: block;
+	clear: both;
+}
+
+h1 { font-size: 1.6em; }
+h2 { font-size: 1.5em; }
+h3 { font-size: 1.4em; }
+h4 { font-size: 1.3em; }
+h5 { font-size: 1.2em; }
+h6 { font-size: 1.1em; }
+
+.case h1 {
+	font-size: 1.2em;
+	margin: .4em 0;
+	text-transform: none;
+}
+
+h1#title {
+	text-transform: none;
+	float: left;
+	margin: 7px 0 0 0;
+
+	a {
+		color: inherit;
+
+		&:hover {
+			color: #E44A4A;
+			text-decoration: none;
+		}
+	}
+}

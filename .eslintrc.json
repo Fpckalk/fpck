@@ -1,0 +1,18 @@
+{
+  "root": true,
+  "extends": "airbnb-base",
+  "env": {
+    "browser": true,
+    "jquery": true
+  },
+  "globals": {
+    "siteUrls": true
+  },
+  "rules": {
+    "linebreak-style": ["error", "windows"],
+    "no-trailing-spaces": ["error", {
+      "skipBlankLines": true,
+      "ignoreComments": true
+    }]
+  }
+}
