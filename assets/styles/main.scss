@@ -1,7 +1,20 @@
-// Importing the styles
-@import "mixins";
-@import "base";
-@import "text";
+@import "~normalize.css/normalize";
+@import "common/variables";
+@import "common/colors";
+@import "common/mixins/media-queries";
+@import "common/mixins/container";
 
-@media only screen and (min-width: 481px) { @import "481up"; }
-@media only screen and (min-width: 768px) { @import "768up"; }
+@import "common/images";
+@import "common/type";
+@import "common/global";
+
+@import "components/hero";
+@import "components/content-row";
+@import "components/content-with-scenery";
+@import "components/columns";
+@import "components/header";
+@import "components/menu";
+@import "components/forms";
+
+@import "layouts/rows";
+@import "layouts/contact";

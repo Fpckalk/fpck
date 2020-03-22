@@ -1,0 +1,10 @@
+.content-row {
+  display: grid;
+  padding-top: $content-row-padding * 2.5;
+  padding-bottom: $content-row-padding * 2.5;
+
+  @include respond-above(sm) {
+    padding-top: $content-row-padding;
+    padding-bottom: $content-row-padding;
+  }
+}

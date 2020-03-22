@@ -1,0 +1,36 @@
+.form-control {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.form-control label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: .45rem;
+}
+
+.form-control {
+  input[type=text],
+  input[type=email],
+  input[type=password],
+  textarea {
+    border-radius: 2px;
+    border: 1px solid $gray;
+    padding: .85rem;
+    width: 100%;
+  }
+}
+
+button {
+  border: none;
+  background-color: $link-color;
+  color: $white;
+  font-weight: bold;
+  padding: .85rem;
+  border-radius: 2px;
+  cursor: pointer;
+  
+  &:hover {
+    background-color: darken($link-color, 8%);
+  }
+}

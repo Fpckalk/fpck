@@ -1,5 +1,3 @@
-		</div>
-		<hr>
 		<footer>
 			<?php 
 				$lines = array(
@@ -25,15 +23,13 @@
 				// And echo it in a paragraph
 				// Using mt_rand for best practice purposes and better randomness
 				$random_key = mt_rand(0, count($lines) - 1);
-				echo "<p>". $lines[$random_key] . "</p>";
+				// echo "<p>". $lines[$random_key] . "</p>";
 			?>
 		</footer>
 	</div>
 	
 </body>
 
-<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
-<script type="text/javascript" src="js/jquery.validate.min.js"></script>
-<script type="text/javascript" src="js/js.js"></script>
+<script type="text/javascript" src="dist/scripts/main.js"></script>
 
 </html>

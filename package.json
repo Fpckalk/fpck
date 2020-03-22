@@ -36,6 +36,8 @@
     "webpack-merge": "^4.2.1"
   },
   "dependencies": {
-    "jquery": "^3.4.1"
-  }
+    "jquery": "^3.4.1",
+    "normalize.css": "^8.0.1"
+  },
+  "browserslist": "> 1%, last 2 versions, Firefox ESR, iOS >= 7"
 }

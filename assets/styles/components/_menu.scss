@@ -1,0 +1,15 @@
+.main-menu {
+  @include respond-below(md) {
+    display: none;
+  }
+
+  ul {
+    padding: 0;
+    list-style: none;
+    display: flex;
+  }
+
+  li:not(:last-child) {
+    margin-right: 1rem;
+  }
+}

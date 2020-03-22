@@ -1,0 +1,9 @@
+.columns {
+  display: grid;
+  gap: 4%;
+
+  @include respond-above(md) {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+  }
+}

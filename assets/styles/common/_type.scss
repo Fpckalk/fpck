@@ -1,0 +1,22 @@
+body {
+  font-family: $font-body;
+  line-height: 1.6em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-title;
+  line-height: 1.1em;
+}
+
+a {
+  color: $link-color;
+
+  &:hover {
+    color: darken($link-color, 8%);
+  }
+}

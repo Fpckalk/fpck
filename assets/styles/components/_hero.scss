@@ -1,0 +1,28 @@
+.hero {
+  @extend .contain-content;
+  display: flex;
+  padding-top: $hero-padding;
+  padding-bottom: $hero-padding;
+  flex-direction: column;
+  min-height: 70vh;
+  height: 1px; // IE11 fix
+  justify-content: center;
+  color: #10222B;
+
+  // For more modern browsers
+  @supports (display: grid) {
+    height: auto;
+  }
+
+  h1 {
+    @include respond-above(sm) {
+      font-size: 3em;
+    }
+  }
+  
+  .hero-content {
+    @include respond-above(md) {
+      max-width: 55%;
+    }
+  }
+}

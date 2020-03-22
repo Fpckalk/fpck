@@ -1,37 +1,17 @@
 class Fpck {
-  constructor() {
-    this.contactForm = $('#contact_form');
+  static init() {
+    document.addEventListener('scroll', () => Fpck.setScrollClass());
   }
 
-  init() {
-    /**
-     * Contact form validation
-     */
-    this.contactForm.validate({
-      submitHandler() {
-        $.post('/includes/process.php', this.contactForm.serialize(), () => {
-          this.contactForm.hide('fast');
+  static setScrollClass() {
+    const body = document.getElementsByTagName('body')[0];
 
-          $('#contact_succes')
-            .html('Gnarly. I\'ll reply as fast as I can.')
-            .show('fast');
-        });
-      },
-    });
-
-
-    const coffee = document.getElementById('coffee');
-    if (coffee) {
-      coffee.addEventListener('keypress', (e) => {
-        if (e.keyCode === 13) {
-          const target = e.currentTarget;
-          target.outerHTML = `<br><span>${this.value}? Aight, gotcha</span>`;
-        }
-      });
+    if (window.pageYOffset >= 50) {
+      body.classList.add('scroll');
+    } else {
+      body.classList.remove('scroll');
     }
   }
 }
 
-$(document).ready(() => {
-  new Fpck().init();
-});
+Fpck.init();

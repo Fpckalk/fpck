@@ -1,0 +1,21 @@
+// Container
+@mixin container-padding-left($factor: 1) {
+  padding-left: calc(((100% * #{$factor}) - #{$container-width}) * 0.5);
+
+  @include respond-below(lg) {
+    padding-left: calc((100% - 88%) * 0.5);
+  }
+}
+
+@mixin container-padding-right($factor: 1) {
+  padding-right: calc(((100% * #{$factor}) - #{$container-width}) * 0.5);
+
+  @include respond-below(lg) {
+    padding-right: calc((100% - 88%) * 0.5);
+  }
+}
+
+@mixin container-padding() {
+  @include container-padding-left();
+  @include container-padding-right();
+}

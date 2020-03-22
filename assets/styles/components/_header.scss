@@ -1,0 +1,33 @@
+.main-header {
+  width: 100%;
+  z-index: 1;
+  transition: .2s;
+
+  @include respond-above(md) {
+    top: 0;
+    position: fixed;
+  }
+
+  .container {
+    display: flex;
+    align-items: baseline;
+  }
+
+  .title {
+    margin-right: auto;
+  }
+
+  a {
+    text-decoration: none;
+    color: $black;
+
+    &:hover {
+      color: darken($link-color, 8%);
+    }
+  }
+}
+
+.scroll .main-header {
+  background-color: $white;
+  box-shadow: 0 0 4px rgba($black, .1);
+}

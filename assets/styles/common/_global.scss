@@ -1,0 +1,17 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $white;
+}
+
+.container {
+  max-width: $container-width;
+  margin: 0 auto;
+  width: 94%;
+}
+
+.contain-content {
+  @include container-padding();
+}

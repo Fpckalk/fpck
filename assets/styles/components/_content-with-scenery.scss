@@ -1,0 +1,92 @@
+.content-with-scenery {
+  @extend .contain-content;
+  display: grid;
+  grid-template: 
+    "scenery" auto
+    "content" auto
+    / 1fr;
+  gap: 4%;
+
+  @include respond-between(sm, md) {
+    padding: 0;
+    min-height: 50vh;
+    grid-template:
+      "content  scenery" auto
+      / 2fr     1fr;
+
+    > * {
+      align-self: center;
+    }
+  }
+
+  @include respond-above(md) {
+    grid-template:
+      "content  scenery" auto
+      / 1fr     1fr;
+  }
+}
+
+.content-with-scenery .content {
+  grid-area: content;
+}
+
+.content-with-scenery .scenery {
+  grid-area: scenery;
+  
+  @include respond-between(sm, md) {
+    overflow: hidden;
+    position: relative;
+    height: 100%;
+    
+    img {
+      height: 100%;
+      max-width: none;
+      position: absolute; // ignore this content
+
+      .content-with-scenery + & {
+        left: -50%;
+      }
+    }
+  }
+}
+
+.content-with-scenery + .content-with-scenery {
+  @include respond-above(md) {
+    grid-template:
+      "scenery  content" auto
+      / 1fr     1fr;
+  }
+
+  @include respond-between(sm, md) {
+    grid-template:
+      "scenery  content" auto
+      / 1fr     2fr;
+  } 
+}
+
+@include respond-between(sm, md) {
+  .content-with-scenery {
+
+    .content {
+      padding-right: 0;
+      @include container-padding-left(2);
+    }
+
+    .scenery {
+      padding-left: 0;
+      @include container-padding-right(2);
+    }
+  }
+
+  .content-with-scenery + .content-with-scenery {
+    .scenery {
+      padding-right: 0;
+      @include container-padding-left(2);
+    }
+    
+    .content {
+      padding-left: 0;
+      @include container-padding-right(2);
+    }
+  }
+}

@@ -1,0 +1,27 @@
+// Colors
+$black: #222222;
+$white: #fbfbfb;
+$gray: #868686;
+$lightgray: #f4f4f0;
+$lightgreen: #bcd6c1;
+$lightblue: #cae6ff;
+$yellow: #f9cc7b;
+
+$link-color: #007bff;
+
+// Fonts
+$font-title: 'Arima Madurai', cursive;
+$font-body: 'Open Sans', sans-serif;
+
+// Grid
+$container-width: 1140px;
+$content-row-padding: 5vw;
+$hero-padding: 8vh;
+
+// Breakpoints
+$breakpoints: (
+  xs: 576px,
+  sm: 768px,
+  md: 992px,
+  lg: 1200px
+);

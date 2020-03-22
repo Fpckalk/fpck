@@ -1,0 +1,22 @@
+#contact {
+  @include respond-above(md) {
+    display: grid;
+    grid-template:
+      "heading  image"  auto
+      "form     image"  auto /
+      1fr       1fr;
+    gap: 0 4%;
+  }
+}
+
+#contact h1 {
+  grid-area: heading;
+}
+
+#contact form {
+  grid-area: form;
+}
+
+#contact .scenery {
+  grid-area: image;
+}
