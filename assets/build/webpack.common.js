@@ -1,3 +1,6 @@
+const config = require('dotenv').config();
+const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
+
 const path = require('path');
 
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
@@ -75,5 +78,30 @@ module.exports = {
     new CopyWebPackPlugin([
       { from: 'assets/static', to: 'static' }
     ]),
+    new BrowserSyncPlugin({
+      host: process.env.HOST,
+      port: process.env.PORT,
+      proxy: process.env.PROXY,
+      files: [
+        {
+          match: [
+            // './dist/scripts/*.js',
+            './dist/styles/*.css'
+          ],
+          fn: (event, file) => {
+            if (event == 'change') {
+              const bs = require("browser-sync").get("bs-webpack-plugin");
+              if (file.split('.').pop()=='js' || file.split('.').pop()=='php' ) {
+                bs.reload();
+              } else {
+                bs.reload("*.css");
+              }
+            }
+          }
+        }
+      ],
+    },{
+      reload: false,
+    }),
   ],
 };

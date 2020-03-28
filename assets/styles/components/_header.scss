@@ -2,6 +2,7 @@
   width: 100%;
   z-index: 1;
   transition: .2s;
+  padding: .5rem 0;
 
   @include respond-above(md) {
     top: 0;
@@ -10,11 +11,7 @@
 
   .container {
     display: flex;
-    align-items: baseline;
-  }
-
-  .title {
-    margin-right: auto;
+    align-items: center;
   }
 
   a {
@@ -30,4 +27,8 @@
 .scroll .main-header {
   background-color: $white;
   box-shadow: 0 0 4px rgba($black, .1);
+}
+
+.main-header .branding {
+  width: 100px;
 }

@@ -1,6 +1,12 @@
 .main-menu {
+  margin-left: auto;
+
   @include respond-below(md) {
     display: none;
+  }
+
+  .scroll & a.active {
+    color: $primary;
   }
 
   ul {

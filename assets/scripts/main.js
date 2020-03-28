@@ -1,6 +1,13 @@
+import scrollSpy from 'simple-scrollspy';
+
 class Fpck {
   static init() {
     document.addEventListener('scroll', () => Fpck.setScrollClass());
+    scrollSpy('.main-menu', {
+      sectionClass: 'div[id]',
+      menuActiveTarget: '.main-menu a',
+      offset: 100,
+    });
   }
 
   static setScrollClass() {

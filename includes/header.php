@@ -6,7 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Frank Kalk | Web developer in Heiloo</title>
 	
-	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Arima+Madurai&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
 	<link type="text/css" rel="stylesheet" media="screen" href="dist/styles/main.css">
 </head>
 <body>
@@ -17,7 +17,7 @@
 <body>
 	<header class="main-header">
 		<div class="container">
-			<h1 class="title"><a href="/">fpck</a></h1>
+			<a href="/"><img class="branding" src="dist/static/images/logo.svg" alt=""></a>
 
 			<nav class="main-menu">
 				<ul>

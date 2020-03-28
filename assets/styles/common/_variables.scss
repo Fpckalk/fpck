@@ -7,10 +7,11 @@ $lightgreen: #bcd6c1;
 $lightblue: #cae6ff;
 $yellow: #f9cc7b;
 
-$link-color: #007bff;
+$primary: #F4712F;
+$link-color: $primary;
 
 // Fonts
-$font-title: 'Arima Madurai', cursive;
+$font-title: 'Noto Sans KR', sans-serif;
 $font-body: 'Open Sans', sans-serif;
 
 // Grid
