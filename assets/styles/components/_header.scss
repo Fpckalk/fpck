@@ -3,10 +3,13 @@
   z-index: 1;
   transition: .2s;
   padding: .5rem 0;
+  top: 0;
+  position: sticky;
+  background-color: $white;
 
   @include respond-above(md) {
-    top: 0;
     position: fixed;
+    background-color: transparent;
   }
 
   .container {

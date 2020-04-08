@@ -8,6 +8,9 @@ class Fpck {
       menuActiveTarget: '.main-menu a',
       offset: 100,
     });
+
+    document.querySelector('.nav-toggler')
+      .addEventListener('click', event => Fpck.toggleMobileMenu(event));
   }
 
   static setScrollClass() {
@@ -17,6 +20,20 @@ class Fpck {
       body.classList.add('scroll');
     } else {
       body.classList.remove('scroll');
+    }
+  }
+
+  static toggleMobileMenu(event) {
+    const button = event.currentTarget;
+    const buttonIcon = button.querySelector('i');
+    const body = document.querySelector('body');
+
+    if (body.classList.contains('menu-toggled')) {
+      body.classList.remove('menu-toggled');
+      buttonIcon.classList.remove('fa-times');
+    } else {
+      body.classList.add('menu-toggled');
+      buttonIcon.classList.add('fa-times');
     }
   }
 }
